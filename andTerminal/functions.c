@@ -26,7 +26,7 @@ char *andt_read_line(void) {
 
 	while(1) {
 		c = getchar(); //EOF - integer
-		if(c == EOF || c == '\n') {
+		if(c == EOF || c == '\n') {	// c == -1
 			buffer[position] = '\0';
 			return buffer;
 			} else {
